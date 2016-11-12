@@ -1,5 +1,24 @@
 <html>
+<head>
+
+</head>
 <body>
-<img src='hubbahubba_2.jpg'>
+<img id="randomImage"/>
+
+<script>
+function getRandomImage() {
+	var images = ['hubbahubba_2.jpg'];
+	var image = images[Math.floor(Math.random()*images.length)];
+ 
+return image;
+}
+ 
+function displayRandomImage() {
+var htmlImage = document.getElementById("randomImage");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+</script>
+
 </body>
 </html>
